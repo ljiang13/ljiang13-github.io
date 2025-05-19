@@ -6,8 +6,6 @@ http://www.nga.gov/content/ngaweb.html
 Open to the public and free of charge, the museum was privately established in 1937 for the American people by a joint resolution of the United States Congress.
 
 
-<!-- use http://maps.google.com/?q= for maps-->
-
 J. Paul Getty Museum
 1200 Getty Center Dr
 Los Angeles, CA, USA
@@ -22,6 +20,7 @@ http://www.rijksmuseum.nl/
 52.36,4.885278
 This Dutch national museum has on display 8,000 objects of art and history, from their total collection of 1 million objects from the years 1200-2000, among which are some masterpieces by Rembrandt, Frans Hals, and Johannes Vermeer. 
 
+<!-- use http://maps.google.com/?q= for maps-->
 
 Hermitage Museum
 Palace Square, 2
