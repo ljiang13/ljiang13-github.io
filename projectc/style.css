@@ -18,3 +18,18 @@ table{
 th{
     text-align: left;
 }
+
+/* ChatGPT used to generate flexbox format for image sushi.png */
+.profile-section{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 20px;
+}
+
+.profile-img{
+    float: right;
+    width: 150px;
+    height: auto;
+    margin-left: 300px;
+}
