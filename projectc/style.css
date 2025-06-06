@@ -12,19 +12,19 @@ table, td, th{
     height: 30px;
 }
 table{
-    width: 40%;
+    width: 60%;
     border-collapse: collapse;
 }
 th{
     text-align: left;
 }
 
-/* Used ChatGPT to format the Media title*/
+/* Used ChatGPT to format the Media section*/
 .main-content {
     display: flex;
     justify-content: space-between;
     gap: 50px;
-    padding: 20px;
+    padding: 50px;
     align-items: flex-start;
 }
 
@@ -35,5 +35,7 @@ th{
 .media-section {
     flex: 1.5;
     text-align: center;
+    padding-right: 150px;
 }
+
 
