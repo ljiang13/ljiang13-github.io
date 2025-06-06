@@ -17,11 +17,11 @@
     <h2>About Me</h2>
     <table>
         <caption>Profile Information</caption>
-            <tr>
+            <thead>
                 <!-- used ChatGPT to figure out how to have this left aligned-->
-                <th colspan="2">Basic Information</th>
-                
-            </tr>
+                <tr><th colspan="2">Basic Information</th></tr>
+            </thead>    
+            <tbody>
             <tr>
                 <!-- td = table column-->
                 <td>Name:</td>
@@ -64,21 +64,29 @@
                 <td>Favorite Flavor Gum:</td>
                 <td>Watermelon</td>
             </tr>
+            </tbody>
+
+            <!--Used ChatGPT for tfoot format-->
+            <tfoot>
+                <tr>
+                    <td colspan="2">End of Profile Information</td>
+                </tr>
+            </tfoot>
     </table>
 
     <h2>Leave Feedback</h2>
     
 <div class="feedback-section" >
 <!--Feedback section-->
-    <form method="post" action="process.php>">
+    <form method="post" action="process.php">
         <fieldset>
         <legend>Your Info</legend>
         <label>Name:</label>
-        <input type="text" name="Name"/>
+        <input type="text" name="Name" required/>
         <br>
         <br>
         <label>Email:</label>
-        <input type="email" name="Email"/>
+        <input type="email" name="Email" required/>
         <br>
         <br>
         <label>Favorite Color:</label>
@@ -120,10 +128,7 @@
         <br>
         <br>
         <input type="submit" name="submit">
-    </form>
-    
-  
-    
+    </form>   
 </div>
 
 <!--used ChatGPT to wrap both sections in div-->
@@ -147,13 +152,7 @@
     </div>
 </div>
 
-
-
-
-
 </body>
-
-
 
 
 </html>

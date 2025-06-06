@@ -19,13 +19,13 @@ th{
     text-align: left;
 }
 
-/* Used ChatGPT to format the Media section*/
+/* Used ChatGPT to format the main-content, profile, media section*/
 .main-content {
-    display: flex;
-    justify-content: space-between;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     gap: 50px;
     padding: 50px;
-    align-items: flex-start;
 }
 
 .profile-section {
@@ -33,6 +33,7 @@ th{
 }
 
 .media-section {
+    position: relative;
     flex: 1.5;
     text-align: center;
     padding-right: 150px;
@@ -43,5 +44,16 @@ th{
     height: 100px;
 }
 
+tbody tr:hover{
+    background-color: beige;
+    color: black;
+}
+
+@media only screen and (max-width: 600px){
+   body{
+    background-color: lightgrey;
+    color:black;
+   } 
+}
 
 
