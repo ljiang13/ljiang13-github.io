@@ -18,3 +18,21 @@ table{
 th{
     text-align: left;
 }
+
+/* Used ChatGPT to format the Media title*/
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 20px;
+    align-items: flex-start;
+}
+
+.profile-section {
+    flex: 3;
+}
+
+.media-section {
+    flex: 1.5;
+    text-align: justify;
+}
