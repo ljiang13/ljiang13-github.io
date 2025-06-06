@@ -68,44 +68,60 @@
 
     <h2>Leave Feedback</h2>
     
-    <caption>Your Info</caption>
 <div class="feedback-section" >
 <!--Feedback section-->
-    <form>
-        <td>Name:</td>
+    <form method="post" action="process.php>">
+        <fieldset>
+        <legend>Your Info</legend>
+        <label>Name:</label>
         <input type="text" name="Name"/>
         <br>
         <br>
-        <td>Email:</td>
+        <label>Email:</label>
         <input type="email" name="Email"/>
         <br>
         <br>
-        <td>Favorite Color:</td>
+        <label>Favorite Color:</label>
         <input type="color" name="Color"/>
+        </fieldset>
     </form>
 </div>
     <br>
     <br>
-    <caption>Rating</caption>
     <div class="rating-section">
         <form>
-            <input type="radio" name="1"/>
+            <fieldset>
+                <legend>Rating</legend>
+            <input type="radio" id="rating1" name="one" value="1"/>
             <label for="1">1</label>
             <br>
-            <input type="radio" name="2"/>
+            <input type="radio" id="rating2" name="two" value="2"/>
             <label for="2">2</label>
             <br>
-            <input type="radio" name="3"/>
+            <input type="radio" id="rating3" name="three" value="3"/>
             <label for="3">3</label>
             <br>
-            <input type="radio" name="4"/>
+            <input type="radio" id="rating4" name="four" value="4"/>
             <label for="4">4</label>
             <br>
-            <input type="radio" name="5"/>
+            <input type="radio" id="rating5" name="five" value="5"/>
             <label for="5">5</label>
+            </fieldset>
         </form>
-
     </div>
+
+    <br>
+    <form>
+        <legend>Message:</legend>
+        <textarea class="textarea" ></textarea>
+        <br>
+        <br>
+        <input type="checkbox" name="join mailing list" value="Join Mailing List">Join Mailing List<br/> 
+        <br>
+        <br>
+        <input type="submit" name="submit">
+    </form>
+    
   
     
 </div>

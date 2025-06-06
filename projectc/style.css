@@ -38,16 +38,9 @@ th{
     padding-right: 150px;
 }
 
-.feedback-section {
-    border: 1px solid;
-    padding: 10px;
-    width: 500px;
-}
-
-.rating-section{
-    border: 1px solid;
-    padding: 10px;
-    width: 500px;
+.textarea{
+    width: 200px;
+    height: 100px;
 }
 
 
