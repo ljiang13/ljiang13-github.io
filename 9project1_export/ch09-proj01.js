@@ -49,12 +49,15 @@ playButton.addEventListener("click", () => {
 });
 
 //skip buttons and used Chat to fix errors
-const skipButtons = document.querySelectorAll('[data-skip]');
-    button.addEventListener("click", () => {
-        const skipTime = parseFloat(button.dataset.skip);
-        video.currentTime += skipTime;
-   
+const skipBack = document.querySelector('button[data-skip="-5"]');
+const skipForward = document.querySelector('button[data-skip="5"]');
 
-    })
+    skipBack.addEventListener("click", () => {
+        video.currentTime -= 5;
+    });
+
+    skipForward.addEventListener("click", () =>{
+        video.currentTime += 5;
+    });
 
 
