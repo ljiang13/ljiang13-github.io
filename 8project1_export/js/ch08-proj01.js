@@ -16,3 +16,17 @@ const shipping_threshold = prompt('Enter shipping threshold (1000)');
 
       outputCartRow(item, total);
    }
+
+   let taxRate = parseFloat(document.getElementById("tax").value);
+   let shippingThreshold = parseFloat(document.getElementById("threshold").value);
+
+   // used chat to help with calculations
+   let tax = subtotal * (taxRate / 100);
+   let shipping = subtotal > shippingThreshold ? 0 : 40;
+   let grandTotal = subtotal + tax + shipping;
+
+   //results
+   document.getElementById("subtotal").textContent = "$" + subtotal.toFixed(2);
+   document.getElementById("taxAmount").textContent = "$" + tax.toFixed(2);
+   document.getElementById("shipping").textContent = "$" + shipping.toFixed(2);
+   document.getElementById("grandTotal").textContent = "$" + grandTotal.toFixed(2);
