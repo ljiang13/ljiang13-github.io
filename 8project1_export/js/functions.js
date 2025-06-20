@@ -3,6 +3,7 @@ function calculateTotal(quantity, price){
     return quanity * price;
 }
 
+function outputCartRow(item, total) {}
 
 
 
