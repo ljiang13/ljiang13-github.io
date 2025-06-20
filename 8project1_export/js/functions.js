@@ -4,7 +4,7 @@ function calculateTotal(quantity, price){
 }
 
 
-
+// used chat
 function outputCartRow(item, total) {
   document.write("<tr>");
   document.write(`<td><img src="images/${item.product.filename}" alt="${item.product.title}" width="100"></td>`);
