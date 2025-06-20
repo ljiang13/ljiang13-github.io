@@ -17,11 +17,12 @@ const shipping_threshold = prompt('Enter shipping threshold (1000)');
       outputCartRow(item, total);
    }
 
-   let taxRate = parseFloat(document.getElementById("tax").value);
-   let shippingThreshold = parseFloat(document.getElementById("threshold").value);
+   //function updateTotals used with assistance with chatgpt
+   function updateTotals() {
+   let taxRate = parseFloat(document.getElementById("taxRate").value) / 100;
+   let shippingThreshold = parseFloat(document.getElementById("shippingThreshold").value);
 
-   // used chat to help with calculations
-   let tax = subtotal * (taxRate / 100);
+   let tax = subtotal * taxRate;
    let shipping = subtotal > shippingThreshold ? 0 : 40;
    let grandTotal = subtotal + tax + shipping;
 
@@ -30,3 +31,13 @@ const shipping_threshold = prompt('Enter shipping threshold (1000)');
    document.getElementById("taxAmount").textContent = "$" + tax.toFixed(2);
    document.getElementById("shipping").textContent = "$" + shipping.toFixed(2);
    document.getElementById("grandTotal").textContent = "$" + grandTotal.toFixed(2);
+      
+   }
+   // used chat to help with different user input
+   document.getElementById("taxRate").addEventListener("input", updateTotals);
+   document.getElementById("shippingThreshold").addEventListener("input", updateTotals);
+
+   updateTotals();
+
+
+  
