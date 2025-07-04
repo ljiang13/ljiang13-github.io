@@ -1,3 +1,5 @@
+<?php require_once 'data.inc.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
